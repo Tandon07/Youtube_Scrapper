@@ -32,7 +32,7 @@ binaryornot==0.4.4
 bitarray==2.4.1
 bkcharts==0.2
 black==19.10b0
-
+python==3.10
 bleach==4.1.0
 
 bokeh==2.4.2
@@ -314,7 +314,7 @@ scikit-learn-intelex==2021.5.0
 scikit-learn==1.0.2
 scipy==1.7.3
 scrapy==2.6.1
-
+python==3.9
 selenium==4.5.0
 send2trash==1.8.0
 service_identity==18.1.0
