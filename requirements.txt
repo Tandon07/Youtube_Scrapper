@@ -125,7 +125,7 @@ mysqlclient==2.1.1
 notebook==6.4.8
 numba==0.55.1
 numexpr==2.8.1
-numpy==1.22.4
+numpy==1.18
 numpydoc==1.2
 oauth2client==4.1.3
 
