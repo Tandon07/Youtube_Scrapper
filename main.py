@@ -16,17 +16,10 @@ import urllib
 from urllib.request import urlopen as uReq
 from flask import Flask, render_template, request,jsonify
 from flask_cors import CORS,cross_origin
-# import imageDownlaod
-# import videoDownload
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 import mysql.connector as conn
 from mysql.connector import cursor
 from pytube import YouTube
-# options.set_headless(headless=True)
-# chrome_options = Options()
-# chrome_options.add_argument('--window-size=800,800')
 driver = webdriver.Chrome(ChromeDriverManager().install())
 # driver = webdriver.Firefox(firefox_options=options)
 # from selenium import webdriver
@@ -38,7 +31,21 @@ from pydrive.drive import GoogleDrive
 import base64
 import requests
 import logging
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
 logging.basicConfig(filename="yt_test.log", level=logging.INFO, format='%(asctime)s %(name)s %(message)s %(levelname)s')
+# chrome_options = webdriver.ChromeOptions()
+# chrome_options.binary_location = os.environ.get("google-chrome")
+# chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--disable-dev-shm-usage")
+# chrome_options.add_argument("--no-sandbox")
+# driver = webdriver.Chrome(executable_path=os.environ.get("chromedriver"), options=chrome_options)
+
+
+
+
 
 
 commenter_name = []
@@ -196,7 +203,7 @@ class Youtube:
         while last_height < 10000:
             driver.execute_script("window.scrollTo(" + str(start_height) + ", " + str(last_height) + ");")
             start_height = last_height
-            last_height = last_height + 400
+            last_height = last_height + 500
             time.sleep(2)
 
         try:
@@ -286,13 +293,9 @@ class Youtube:
             Downloadlink = []
         # Upload files
             directory = "./videos/"+ str(Downlink) + ".mp4"
-        except Exception as e:
-            logging.exception(e)
-
 
         # filename = os.path.join(directory, f)
 
-        try:
             title=str(Downlink)+".mp4"
             gfile = drive.CreateFile({'parents': [{'id': folder}], 'title': title})
             gfile.SetContentFile(directory)
@@ -305,14 +308,16 @@ class Youtube:
             'role': 'reader'})
 
         # SHARABLE LINK
+            Downloadlink.append(gfile['alternateLink'])
+            logging.info("link shared")
+            return render_template('download.html', Dlink=str(Downloadlink[0]))
         except Exception as e:
             logging.exception(e)
 
-        Downloadlink.append(gfile['alternateLink'])
-        print("link shared")
+
         # return str(Downloadlink)
 
-        return render_template('download.html', Dlink=str(Downloadlink[0]))
+
 
 
 
