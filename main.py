@@ -105,7 +105,7 @@ class Youtube:
             while last_height < 4000:
                 driver.execute_script("window.scrollTo(" + str(start_height) + ", " + str(last_height) + ");")
                 start_height = last_height
-                last_height = last_height + 400
+                last_height = last_height + 700
                 time.sleep(2)
 
                 # Making page static
@@ -185,11 +185,13 @@ class Youtube:
             views.append(bs.select_one("#info-container #info .bold"))
             Youtuber_name=bs.select_one("#container #text-container yt-formatted-string a")
             Y_Name=Youtuber_name.text
-            mongoThumbnail=bs.select_one(".ytp-ad-preview-image")
-            mongoThumbnailF=mongoThumbnail.contents[0]['src']
+
         except Exception as e:
             logging.exception(e)
 
+        mongoThumbnail = bs.select_one(".ytp-ad-preview-image")
+        mongoThumbnailF = mongoThumbnail.contents[0]['src']
+        base64image = base64.b64encode(requests.get(mongoThumbnailF).content)
 
         while last_height < 10000:
             driver.execute_script("window.scrollTo(" + str(start_height) + ", " + str(last_height) + ");")
@@ -251,7 +253,7 @@ class Youtube:
 
         # MongoDB Connection
 
-        base64image=base64.b64encode(requests.get(mongoThumbnailF).content)
+
 
         # i = 1
         # c = ch_for_link[0]
