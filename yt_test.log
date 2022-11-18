@@ -12,3 +12,54 @@
 2022-11-18 12:46:38,310 werkzeug  * Debugger is active! WARNING
 2022-11-18 12:46:38,326 werkzeug  * Debugger PIN: 707-636-620 INFO
 2022-11-18 12:46:38,639 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-18 12:46:56,219 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py', reloading INFO
+2022-11-18 12:46:57,162 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-18 12:47:09,097 werkzeug  * Debugger is active! WARNING
+2022-11-18 12:47:09,108 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-18 12:47:09,290 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-18 12:54:33,755 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-18 12:54:41,630 werkzeug  * Debugger is active! WARNING
+2022-11-18 12:54:41,636 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-18 12:54:41,750 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-18 12:54:46,831 root Welcome to Youtube Scrapping INFO
+2022-11-18 12:54:46,894 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading INFO
+2022-11-18 12:54:46,901 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask\\_compat.py', reloading INFO
+2022-11-18 12:54:46,911 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask_cors\\decorator.py', reloading INFO
+2022-11-18 12:54:46,917 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask\\templating.py', reloading INFO
+2022-11-18 12:54:46,919 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\jinja2\\environment.py', reloading INFO
+2022-11-18 12:54:46,923 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\jinja2\\_compat.py', reloading INFO
+2022-11-18 12:54:46,926 werkzeug 127.0.0.1 - - [18/Nov/2022 12:54:46] "[35m[1mGET / HTTP/1.1[0m" 500 - INFO
+2022-11-18 12:54:47,787 werkzeug 127.0.0.1 - - [18/Nov/2022 12:54:47] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-18 12:54:47,787 werkzeug 127.0.0.1 - - [18/Nov/2022 12:54:47] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-18 12:54:47,850 werkzeug 127.0.0.1 - - [18/Nov/2022 12:54:47] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-18 12:54:47,893 werkzeug 127.0.0.1 - - [18/Nov/2022 12:54:47] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:54:47,934 werkzeug 127.0.0.1 - - [18/Nov/2022 12:54:47] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:54:48,769 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-18 12:54:59,263 werkzeug  * Debugger is active! WARNING
+2022-11-18 12:54:59,269 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-18 12:54:59,413 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-18 12:54:59,566 root Welcome to Youtube Scrapping INFO
+2022-11-18 12:54:59,620 werkzeug 127.0.0.1 - - [18/Nov/2022 12:54:59] "[35m[1mGET / HTTP/1.1[0m" 500 - INFO
+2022-11-18 12:55:00,194 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,276 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,324 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,335 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,384 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,437 root Welcome to Youtube Scrapping INFO
+2022-11-18 12:55:00,466 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "[35m[1mGET / HTTP/1.1[0m" 500 - INFO
+2022-11-18 12:55:00,485 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,487 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,504 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,515 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:55:00,557 werkzeug 127.0.0.1 - - [18/Nov/2022 12:55:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:56:50,022 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-18 12:56:56,623 werkzeug  * Debugger is active! WARNING
+2022-11-18 12:56:56,628 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-18 12:56:56,756 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-18 12:57:07,472 root Welcome to Youtube Scrapping INFO
+2022-11-18 12:57:07,530 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:07] "[35m[1mGET / HTTP/1.1[0m" 500 - INFO
+2022-11-18 12:57:08,168 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-18 12:57:08,168 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-18 12:57:08,180 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-18 12:57:08,187 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:57:08,215 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
