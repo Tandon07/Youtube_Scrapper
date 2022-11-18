@@ -282,37 +282,35 @@ class Youtube:
     @app.route("/download/<int:Downlink>")  # route to show the review comments in a web UI
     def download(Downlink):
 
-        try:
-            yt = YouTube(link[Downlink-1])
-            ys = yt.streams.get_by_resolution('360p')
+        yt = YouTube(link[Downlink-1])
+        ys = yt.streams.get_by_resolution('360p')
         # Starting download
-            logging.info("Downloading...")
-            ys.download("./videos", str(Downlink) + ".mp4")
-            logging.info("Downloaded😊😊")
-            folder = '1nElCMe8B7caNjitJC-jQbb8Wnv7PHNRS'
-            Downloadlink = []
+        logging.info("Downloading...")
+        ys.download("./videos", str(Downlink) + ".mp4")
+        logging.info("Downloaded😊😊")
+        folder = '1nElCMe8B7caNjitJC-jQbb8Wnv7PHNRS'
+        Downloadlink = []
         # Upload files
-            directory = "./videos/"+ str(Downlink) + ".mp4"
+        directory = "./videos/"+ str(Downlink) + ".mp4"
 
         # filename = os.path.join(directory, f)
 
-            title=str(Downlink)+".mp4"
-            gfile = drive.CreateFile({'parents': [{'id': folder}], 'title': title})
-            gfile.SetContentFile(directory)
-            gfile.Upload()
-            logging.info("Uploaded")
+        title=str(Downlink)+".mp4"
+        gfile = drive.CreateFile({'parents': [{'id': folder}], 'title': title})
+        gfile.SetContentFile(directory)
+        gfile.Upload()
+        logging.info("Uploaded")
         # SET PERMISSION
-            permission = gfile.InsertPermission({
+        permission = gfile.InsertPermission({
             'type': 'anyone',
             'value': 'anyone',
             'role': 'reader'})
 
         # SHARABLE LINK
-            Downloadlink.append(gfile['alternateLink'])
-            logging.info("link shared")
-            return render_template('download.html', Dlink=str(Downloadlink[0]))
-        except Exception as e:
-            logging.exception(e)
+        Downloadlink.append(gfile['alternateLink'])
+        logging.info("link shared")
+        return render_template('download.html', Dlink=str(Downloadlink[0]))
+
 
 
         # return str(Downloadlink)

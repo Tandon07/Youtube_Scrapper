@@ -63,3 +63,61 @@
 2022-11-18 12:57:08,180 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
 2022-11-18 12:57:08,187 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
 2022-11-18 12:57:08,215 werkzeug 127.0.0.1 - - [18/Nov/2022 12:57:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 12:58:57,259 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-18 12:59:04,067 werkzeug  * Debugger is active! WARNING
+2022-11-18 12:59:04,072 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-18 12:59:04,170 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-18 12:59:07,515 root Welcome to Youtube Scrapping INFO
+2022-11-18 12:59:07,526 werkzeug 127.0.0.1 - - [18/Nov/2022 12:59:07] "GET / HTTP/1.1" 200 - INFO
+2022-11-18 12:59:07,540 werkzeug 127.0.0.1 - - [18/Nov/2022 12:59:07] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
+2022-11-18 12:59:07,856 werkzeug 127.0.0.1 - - [18/Nov/2022 12:59:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - INFO
+2022-11-18 12:59:07,885 werkzeug 127.0.0.1 - - [18/Nov/2022 12:59:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - INFO
+2022-11-18 12:59:47,780 root 'href' ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\main.py", line 135, in index
+    all_videos.append(bigbox[i]['href'])
+  File "C:\Users\tando\anaconda3\lib\site-packages\bs4\element.py", line 1519, in __getitem__
+    return self.attrs[key]
+KeyError: 'href'
+2022-11-18 12:59:47,823 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\bs4\\element.py', reloading INFO
+2022-11-18 12:59:47,847 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\main.py", line 156, in index
+    link.append("www.youtube.com" + all_videos[i])
+IndexError: list index out of range
+2022-11-18 12:59:49,255 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\main.py", line 168, in index
+    all_vids_new = all_videos[i].replace("/watch?v=", "")
+IndexError: list index out of range
+2022-11-18 12:59:49,268 werkzeug 127.0.0.1 - - [18/Nov/2022 12:59:49] "POST /details HTTP/1.1" 200 - INFO
+2022-11-18 12:59:49,788 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-18 12:59:58,623 werkzeug  * Debugger is active! WARNING
+2022-11-18 12:59:58,631 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-18 12:59:58,838 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-18 13:00:10,591 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\main.py", line 286, in download
+    yt = YouTube(link[Downlink-1])
+IndexError: list index out of range
+2022-11-18 13:00:10,608 werkzeug 127.0.0.1 - - [18/Nov/2022 13:00:10] "[35m[1mGET /download/1 HTTP/1.1[0m" 500 - INFO
+2022-11-18 13:00:11,078 werkzeug 127.0.0.1 - - [18/Nov/2022 13:00:11] "GET /download/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-18 13:00:11,079 werkzeug 127.0.0.1 - - [18/Nov/2022 13:00:11] "GET /download/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-18 13:00:11,092 werkzeug 127.0.0.1 - - [18/Nov/2022 13:00:11] "GET /download/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-18 13:00:11,100 werkzeug 127.0.0.1 - - [18/Nov/2022 13:00:11] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 13:00:11,122 werkzeug 127.0.0.1 - - [18/Nov/2022 13:00:11] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 13:01:01,799 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\main.py", line 286, in download
+    yt = YouTube(link[Downlink-1])
+IndexError: list index out of range
+2022-11-18 13:01:01,816 werkzeug 127.0.0.1 - - [18/Nov/2022 13:01:01] "[35m[1mGET /download/1 HTTP/1.1[0m" 500 - INFO
+2022-11-18 13:01:01,833 werkzeug 127.0.0.1 - - [18/Nov/2022 13:01:01] "GET /download/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-18 13:01:01,834 werkzeug 127.0.0.1 - - [18/Nov/2022 13:01:01] "GET /download/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-18 13:01:01,851 werkzeug 127.0.0.1 - - [18/Nov/2022 13:01:01] "GET /download/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-18 13:01:01,858 werkzeug 127.0.0.1 - - [18/Nov/2022 13:01:01] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-18 13:02:03,071 werkzeug 127.0.0.1 - - [18/Nov/2022 13:02:03] "GET /details/VbaJ7eL9qFM HTTP/1.1" 200 - INFO
+2022-11-18 13:02:25,467 werkzeug  * Detected change in 'C:\\Users\\tando\\PycharmProjects\\Youtube_Master\\main.py', reloading INFO
+2022-11-18 13:02:25,470 werkzeug  * Detected change in 'C:\\Users\\tando\\PycharmProjects\\Youtube_Master\\main.py', reloading INFO
+2022-11-18 13:02:25,470 werkzeug  * Detected change in 'C:\\Users\\tando\\PycharmProjects\\Youtube_Master\\main.py', reloading INFO
+2022-11-18 13:02:27,572 werkzeug  * Restarting with watchdog (windowsapi) INFO
