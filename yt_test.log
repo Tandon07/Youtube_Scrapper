@@ -278,3 +278,16 @@ Traceback (most recent call last):
     dict={"S.No":i+1,"Title":title[i].text,"Thumbnail": imga[i],"Link":all_vids_new}
 IndexError: list index out of range
 2022-11-19 17:37:21,797 werkzeug 127.0.0.1 - - [19/Nov/2022 17:37:21] "POST /details HTTP/1.1" 200 - INFO
+2022-11-20 19:11:01,085 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-20 19:11:06,416 werkzeug  * Debugger is active! WARNING
+2022-11-20 19:11:06,430 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-20 19:11:06,562 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-20 19:13:29,403 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\envs\\apiGET\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing\\core.py', reloading INFO
+2022-11-20 19:13:29,463 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\envs\\apiGET\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py', reloading INFO
+2022-11-20 19:13:31,921 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-20 19:13:37,401 werkzeug  * Debugger is active! WARNING
+2022-11-20 19:13:37,404 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-20 19:13:37,546 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-20 19:14:55,165 werkzeug  * Detected change in 'C:\\Users\\tando\\PycharmProjects\\Youtube_Master\\app.py', reloading INFO
+2022-11-20 19:14:55,167 werkzeug  * Detected change in 'C:\\Users\\tando\\PycharmProjects\\Youtube_Master\\app.py', reloading INFO
+2022-11-20 19:14:56,669 werkzeug  * Restarting with watchdog (windowsapi) INFO
