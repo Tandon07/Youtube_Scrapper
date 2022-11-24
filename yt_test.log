@@ -291,3 +291,195 @@ IndexError: list index out of range
 2022-11-20 19:14:55,165 werkzeug  * Detected change in 'C:\\Users\\tando\\PycharmProjects\\Youtube_Master\\app.py', reloading INFO
 2022-11-20 19:14:55,167 werkzeug  * Detected change in 'C:\\Users\\tando\\PycharmProjects\\Youtube_Master\\app.py', reloading INFO
 2022-11-20 19:14:56,669 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-20 19:45:32,012 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-20 19:45:35,997 werkzeug  * Debugger is active! WARNING
+2022-11-20 19:45:35,997 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-20 19:45:36,215 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-20 19:45:36,215 werkzeug  * Running on http://192.168.29.247:8888/ (Press CTRL+C to quit) INFO
+2022-11-20 19:45:52,396 root Welcome to Youtube Scrapping INFO
+2022-11-20 19:45:52,416 werkzeug 192.168.29.247 - - [20/Nov/2022 19:45:52] "GET / HTTP/1.1" 200 - INFO
+2022-11-20 19:45:52,494 werkzeug 192.168.29.247 - - [20/Nov/2022 19:45:52] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
+2022-11-20 19:45:52,765 werkzeug 192.168.29.247 - - [20/Nov/2022 19:45:52] "GET /static/css/style.css HTTP/1.1" 200 - INFO
+2022-11-20 19:45:52,790 werkzeug 192.168.29.247 - - [20/Nov/2022 19:45:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - INFO
+2022-11-20 19:46:22,685 root 'src' ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 137, in index
+    imga.append(img[i]['src'])
+  File "C:\Users\tando\anaconda3\lib\site-packages\bs4\element.py", line 1519, in __getitem__
+    return self.attrs[key]
+KeyError: 'src'
+2022-11-20 19:46:22,697 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 156, in index
+    link.append("www.youtube.com" + all_videos[i])
+IndexError: list index out of range
+2022-11-20 19:46:22,698 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\bs4\\element.py', reloading INFO
+2022-11-20 19:46:23,381 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 169, in index
+    dict={"S.No":i+1,"Title":title[i].text,"Thumbnail": imga[i],"Link":all_vids_new}
+IndexError: list index out of range
+2022-11-20 19:46:23,391 werkzeug 192.168.29.247 - - [20/Nov/2022 19:46:23] "POST /details HTTP/1.1" 200 - INFO
+2022-11-20 19:46:24,309 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-20 19:46:28,478 werkzeug  * Debugger is active! WARNING
+2022-11-20 19:46:28,481 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-20 19:46:28,545 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-20 19:46:28,545 werkzeug  * Running on http://192.168.29.247:8888/ (Press CTRL+C to quit) INFO
+2022-11-20 19:47:53,332 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading INFO
+2022-11-20 19:47:53,335 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask\\_compat.py', reloading INFO
+2022-11-20 19:47:53,340 werkzeug 192.168.29.247 - - [20/Nov/2022 19:47:53] "[35m[1mGET /download/1 HTTP/1.1[0m" 500 - INFO
+2022-11-20 19:47:53,778 werkzeug 192.168.29.247 - - [20/Nov/2022 19:47:53] "GET /download/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-20 19:47:53,782 werkzeug 192.168.29.247 - - [20/Nov/2022 19:47:53] "GET /download/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-20 19:47:53,840 werkzeug 192.168.29.247 - - [20/Nov/2022 19:47:53] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:47:53,844 werkzeug 192.168.29.247 - - [20/Nov/2022 19:47:53] "GET /download/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-20 19:47:53,862 werkzeug 192.168.29.247 - - [20/Nov/2022 19:47:53] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:47:55,005 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-20 19:47:59,542 werkzeug  * Debugger is active! WARNING
+2022-11-20 19:47:59,546 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-20 19:47:59,649 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-20 19:47:59,650 werkzeug  * Running on http://192.168.29.247:8888/ (Press CTRL+C to quit) INFO
+2022-11-20 19:48:15,600 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:15] "[35m[1mGET /download/2 HTTP/1.1[0m" 500 - INFO
+2022-11-20 19:48:16,164 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:16] "GET /download/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-20 19:48:16,164 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:16] "GET /download/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-20 19:48:16,177 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:16] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:48:16,184 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:16] "GET /download/2?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-20 19:48:16,239 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:16] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:48:19,315 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:19] "[35m[1mGET /download/1 HTTP/1.1[0m" 500 - INFO
+2022-11-20 19:48:19,336 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:19] "GET /download/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-20 19:48:19,344 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:19] "GET /download/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-20 19:48:19,373 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:19] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:48:19,388 werkzeug 192.168.29.247 - - [20/Nov/2022 19:48:19] "GET /download/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-20 19:48:38,384 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Scripts\\spyder-script.py', reloading INFO
+2022-11-20 19:48:39,979 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-20 19:48:45,531 werkzeug  * Debugger is active! WARNING
+2022-11-20 19:48:45,535 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-20 19:48:45,628 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-20 19:48:45,628 werkzeug  * Running on http://192.168.29.247:8888/ (Press CTRL+C to quit) INFO
+2022-11-20 19:49:03,217 werkzeug 192.168.29.247 - - [20/Nov/2022 19:49:03] "[35m[1mGET /details/VbaJ7eL9qFM HTTP/1.1[0m" 500 - INFO
+2022-11-20 19:49:03,696 werkzeug 192.168.29.247 - - [20/Nov/2022 19:49:03] "GET /details/VbaJ7eL9qFM?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-20 19:49:03,697 werkzeug 192.168.29.247 - - [20/Nov/2022 19:49:03] "GET /details/VbaJ7eL9qFM?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-20 19:49:03,713 werkzeug 192.168.29.247 - - [20/Nov/2022 19:49:03] "GET /details/VbaJ7eL9qFM?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:49:03,717 werkzeug 192.168.29.247 - - [20/Nov/2022 19:49:03] "GET /details/VbaJ7eL9qFM?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-20 19:49:03,734 werkzeug 192.168.29.247 - - [20/Nov/2022 19:49:03] "GET /details/VbaJ7eL9qFM?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:50:04,510 werkzeug 192.168.29.247 - - [20/Nov/2022 19:50:04] "GET /details/VbaJ7eL9qFM HTTP/1.1" 200 - INFO
+2022-11-20 19:50:12,185 werkzeug 192.168.29.247 - - [20/Nov/2022 19:50:12] "[35m[1mGET /download/1 HTTP/1.1[0m" 500 - INFO
+2022-11-20 19:50:12,202 werkzeug 192.168.29.247 - - [20/Nov/2022 19:50:12] "GET /download/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-20 19:50:12,207 werkzeug 192.168.29.247 - - [20/Nov/2022 19:50:12] "GET /download/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-20 19:50:12,219 werkzeug 192.168.29.247 - - [20/Nov/2022 19:50:12] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-20 19:50:12,223 werkzeug 192.168.29.247 - - [20/Nov/2022 19:50:12] "GET /download/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-20 19:50:49,228 werkzeug 192.168.29.247 - - [20/Nov/2022 19:50:49] "POST /details HTTP/1.1" 200 - INFO
+2022-11-20 19:50:54,863 root Downloading... INFO
+2022-11-20 19:50:54,864 root Downloaded\U0001f60a\U0001f60a INFO
+2022-11-20 19:51:04,464 oauth2client.client Successfully retrieved access token INFO
+2022-11-20 19:51:04,473 googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0 INFO
+2022-11-20 19:51:19,030 root Uploaded INFO
+2022-11-20 19:51:20,754 root link shared INFO
+2022-11-20 19:51:20,761 werkzeug 192.168.29.247 - - [20/Nov/2022 19:51:20] "GET /download/1 HTTP/1.1" 200 - INFO
+2022-11-24 16:08:08,740 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-24 16:08:14,273 werkzeug  * Debugger is active! WARNING
+2022-11-24 16:08:14,279 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-24 16:08:14,463 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-24 16:08:14,464 werkzeug  * Running on http://192.168.29.247:7777/ (Press CTRL+C to quit) INFO
+2022-11-24 16:08:36,879 root Welcome to Youtube Scrapping INFO
+2022-11-24 16:08:36,904 werkzeug 192.168.29.247 - - [24/Nov/2022 16:08:36] "GET / HTTP/1.1" 200 - INFO
+2022-11-24 16:08:37,007 werkzeug 192.168.29.247 - - [24/Nov/2022 16:08:37] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
+2022-11-24 16:08:37,298 werkzeug 192.168.29.247 - - [24/Nov/2022 16:08:37] "GET /static/css/style.css HTTP/1.1" 200 - INFO
+2022-11-24 16:08:37,323 werkzeug 192.168.29.247 - - [24/Nov/2022 16:08:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - INFO
+2022-11-24 16:09:07,418 root 'src' ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 137, in index
+    imga.append(img[i]['src'])
+  File "C:\Users\tando\anaconda3\lib\site-packages\bs4\element.py", line 1519, in __getitem__
+    return self.attrs[key]
+KeyError: 'src'
+2022-11-24 16:09:07,430 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 156, in index
+    link.append("www.youtube.com" + all_videos[i])
+IndexError: list index out of range
+2022-11-24 16:09:07,431 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\bs4\\element.py', reloading INFO
+2022-11-24 16:09:08,318 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 169, in index
+    dict={"S.No":i+1,"Title":title[i].text,"Thumbnail": imga[i],"Link":all_vids_new}
+IndexError: list index out of range
+2022-11-24 16:09:08,323 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:08] "POST /details HTTP/1.1" 200 - INFO
+2022-11-24 16:09:09,096 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-24 16:09:13,846 werkzeug  * Debugger is active! WARNING
+2022-11-24 16:09:13,852 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-24 16:09:14,022 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-24 16:09:14,023 werkzeug  * Running on http://192.168.29.247:7777/ (Press CTRL+C to quit) INFO
+2022-11-24 16:09:16,978 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading INFO
+2022-11-24 16:09:16,980 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Lib\\site-packages\\flask\\_compat.py', reloading INFO
+2022-11-24 16:09:16,999 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:16] "[35m[1mGET /download/1 HTTP/1.1[0m" 500 - INFO
+2022-11-24 16:09:17,625 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:17] "GET /download/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-24 16:09:17,650 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:17] "GET /download/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-24 16:09:17,950 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-24 16:09:22,839 werkzeug  * Debugger is active! WARNING
+2022-11-24 16:09:22,844 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-24 16:09:22,985 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-24 16:09:22,985 werkzeug  * Running on http://192.168.29.247:7777/ (Press CTRL+C to quit) INFO
+2022-11-24 16:09:46,040 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:46] "[35m[1mGET /download/2 HTTP/1.1[0m" 500 - INFO
+2022-11-24 16:09:46,460 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:46] "GET /download/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-24 16:09:46,460 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:46] "GET /download/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-24 16:09:46,472 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:46] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-24 16:09:46,475 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:46] "GET /download/2?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-24 16:09:46,494 werkzeug 192.168.29.247 - - [24/Nov/2022 16:09:46] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-24 16:10:18,694 root 'src' ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 137, in index
+    imga.append(img[i]['src'])
+  File "C:\Users\tando\anaconda3\lib\site-packages\bs4\element.py", line 1519, in __getitem__
+    return self.attrs[key]
+KeyError: 'src'
+2022-11-24 16:10:18,707 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 156, in index
+    link.append("www.youtube.com" + all_videos[i])
+IndexError: list index out of range
+2022-11-24 16:10:19,605 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 169, in index
+    dict={"S.No":i+1,"Title":title[i].text,"Thumbnail": imga[i],"Link":all_vids_new}
+IndexError: list index out of range
+2022-11-24 16:10:19,613 werkzeug 192.168.29.247 - - [24/Nov/2022 16:10:19] "POST /details HTTP/1.1" 200 - INFO
+2022-11-24 16:11:07,692 root Downloading... INFO
+2022-11-24 16:11:07,693 root Downloaded\U0001f60a\U0001f60a INFO
+2022-11-24 16:11:28,837 oauth2client.client Successfully retrieved access token INFO
+2022-11-24 16:11:28,873 googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0 INFO
+2022-11-24 16:11:39,335 root Uploaded INFO
+2022-11-24 16:11:41,804 root link shared INFO
+2022-11-24 16:11:41,808 werkzeug 192.168.29.247 - - [24/Nov/2022 16:11:41] "GET /download/1 HTTP/1.1" 200 - INFO
+2022-11-24 16:12:49,861 werkzeug 192.168.29.247 - - [24/Nov/2022 16:12:49] "GET /details/VbaJ7eL9qFM HTTP/1.1" 200 - INFO
+2022-11-24 16:13:47,237 root Downloading... INFO
+2022-11-24 16:13:51,892 root Downloaded\U0001f60a\U0001f60a INFO
+2022-11-24 16:13:58,483 root Uploaded INFO
+2022-11-24 16:14:00,856 root link shared INFO
+2022-11-24 16:14:00,857 werkzeug 192.168.29.247 - - [24/Nov/2022 16:14:00] "GET /download/2 HTTP/1.1" 200 - INFO
+2022-11-24 16:14:14,807 werkzeug  * Detected change in 'C:\\Users\\tando\\anaconda3\\Scripts\\spyder-script.py', reloading INFO
+2022-11-24 16:14:16,413 werkzeug  * Restarting with watchdog (windowsapi) INFO
+2022-11-24 16:14:22,430 werkzeug  * Debugger is active! WARNING
+2022-11-24 16:14:22,434 werkzeug  * Debugger PIN: 707-636-620 INFO
+2022-11-24 16:14:22,546 werkzeug  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment. WARNING
+2022-11-24 16:14:22,548 werkzeug  * Running on http://192.168.29.247:7777/ (Press CTRL+C to quit) INFO
+2022-11-24 16:24:04,921 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:04] "[35m[1mGET /download/1 HTTP/1.1[0m" 500 - INFO
+2022-11-24 16:24:05,599 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:05] "GET /download/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-24 16:24:05,599 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:05] "GET /download/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-24 16:24:05,623 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:05] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-24 16:24:05,629 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:05] "GET /download/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-24 16:24:05,652 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:05] "GET /download/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-24 16:24:09,898 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "[35m[1mGET /download/2 HTTP/1.1[0m" 500 - INFO
+2022-11-24 16:24:09,916 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "GET /download/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 - INFO
+2022-11-24 16:24:09,919 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "GET /download/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 - INFO
+2022-11-24 16:24:09,934 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-24 16:24:09,939 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "GET /download/2?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
+2022-11-24 16:24:09,964 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
+2022-11-24 16:25:18,163 werkzeug 192.168.29.247 - - [24/Nov/2022 16:25:18] "GET /details/VpkM6IiaJVU HTTP/1.1" 200 - INFO
