@@ -645,3 +645,23 @@ Backtrace:
 2022-11-25 10:59:36,467 werkzeug 127.0.0.1 - - [25/Nov/2022 10:59:36] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
 2022-11-25 11:00:14,924 werkzeug 127.0.0.1 - - [25/Nov/2022 11:00:14] "POST /details HTTP/1.1" 200 - INFO
 2022-11-25 11:01:36,323 werkzeug 127.0.0.1 - - [25/Nov/2022 11:01:36] "GET /details/tiolFUyXIEo HTTP/1.1" 200 - INFO
+2022-11-25 11:03:52,473 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-25 11:04:22,385 root 'src' ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 161, in index
+    imga.append(img[i]['src'])
+  File "C:\Users\tando\anaconda3\lib\site-packages\bs4\element.py", line 1519, in __getitem__
+    return self.attrs[key]
+KeyError: 'src'
+2022-11-25 11:04:22,402 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 180, in index
+    link.append("www.youtube.com" + all_videos[i])
+IndexError: list index out of range
+2022-11-25 11:04:23,066 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 193, in index
+    dict={"S.No":i+1,"Title":title[i].text,"Thumbnail": imga[i],"Link":all_vids_new}
+IndexError: list index out of range
+2022-11-25 11:04:23,077 werkzeug 127.0.0.1 - - [25/Nov/2022 11:04:23] "POST /details HTTP/1.1" 200 - INFO
+2022-11-25 11:05:35,167 werkzeug 127.0.0.1 - - [25/Nov/2022 11:05:35] "GET /details/tiolFUyXIEo HTTP/1.1" 200 - INFO
