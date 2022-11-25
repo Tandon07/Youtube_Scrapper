@@ -665,3 +665,78 @@ Traceback (most recent call last):
 IndexError: list index out of range
 2022-11-25 11:04:23,077 werkzeug 127.0.0.1 - - [25/Nov/2022 11:04:23] "POST /details HTTP/1.1" 200 - INFO
 2022-11-25 11:05:35,167 werkzeug 127.0.0.1 - - [25/Nov/2022 11:05:35] "GET /details/tiolFUyXIEo HTTP/1.1" 200 - INFO
+2022-11-25 16:02:00,577 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-25 16:02:20,990 root Welcome to Youtube Scrapping INFO
+2022-11-25 16:02:21,010 werkzeug 127.0.0.1 - - [25/Nov/2022 16:02:21] "GET / HTTP/1.1" 200 - INFO
+2022-11-25 16:02:21,027 werkzeug 127.0.0.1 - - [25/Nov/2022 16:02:21] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
+2022-11-25 16:02:21,288 werkzeug 127.0.0.1 - - [25/Nov/2022 16:02:21] "GET /static/css/style.css HTTP/1.1" 200 - INFO
+2022-11-25 16:02:21,319 werkzeug 127.0.0.1 - - [25/Nov/2022 16:02:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - INFO
+2022-11-25 16:07:48,981 app Exception on /details [POST] ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 128, in index
+    driver.get(url)
+  File "C:\Users\tando\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 441, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\tando\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\tando\anaconda3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00718CE3+2067683]
+	Ordinal0 [0x006ACBC1+1625025]
+	Ordinal0 [0x005AB7CD+571341]
+	Ordinal0 [0x0059E420+517152]
+	Ordinal0 [0x0059E241+516673]
+	Ordinal0 [0x0059D0B3+512179]
+	Ordinal0 [0x0059D6E8+513768]
+	Ordinal0 [0x005A6672+550514]
+	Ordinal0 [0x005B1BE5+596965]
+	Ordinal0 [0x005B4FD0+610256]
+	Ordinal0 [0x0059DA91+514705]
+	Ordinal0 [0x005B1A1E+596510]
+	Ordinal0 [0x0060B47D+963709]
+	Ordinal0 [0x005F7156+880982]
+	Ordinal0 [0x005CFF1D+720669]
+	Ordinal0 [0x005D0F5F+724831]
+	GetHandleVerifier [0x009CF162+2771330]
+	GetHandleVerifier [0x009C1145+2713957]
+	GetHandleVerifier [0x007ACC0A+533546]
+	GetHandleVerifier [0x007AB970+528784]
+	Ordinal0 [0x006B4F4C+1658700]
+	Ordinal0 [0x006B98B8+1677496]
+	Ordinal0 [0x006B99A5+1677733]
+	Ordinal0 [0x006C4CC4+1723588]
+	BaseThreadInitThunk [0x76907BA9+25]
+	RtlInitializeExceptionChain [0x777EBB9B+107]
+	RtlClearBits [0x777EBB1F+191]
+
+2022-11-25 16:07:48,988 werkzeug 127.0.0.1 - - [25/Nov/2022 16:07:48] "[35m[1mPOST /details HTTP/1.1[0m" 500 - INFO
+2022-11-25 16:12:31,670 root Welcome to Youtube Scrapping INFO
+2022-11-25 16:12:31,671 werkzeug 127.0.0.1 - - [25/Nov/2022 16:12:31] "GET / HTTP/1.1" 200 - INFO
+2022-11-25 16:12:31,775 werkzeug 127.0.0.1 - - [25/Nov/2022 16:12:31] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
+2022-11-25 16:12:56,349 urllib3.connectionpool Connection pool is full, discarding connection: localhost. Connection pool size: 1 WARNING
+2022-11-25 16:12:56,563 urllib3.connectionpool Connection pool is full, discarding connection: localhost. Connection pool size: 1 WARNING
+2022-11-25 16:13:05,947 urllib3.connectionpool Connection pool is full, discarding connection: localhost. Connection pool size: 1 WARNING
+2022-11-25 16:13:14,813 urllib3.connectionpool Connection pool is full, discarding connection: localhost. Connection pool size: 1 WARNING
+2022-11-25 16:13:15,318 urllib3.connectionpool Connection pool is full, discarding connection: localhost. Connection pool size: 1 WARNING
+2022-11-25 16:13:30,193 urllib3.connectionpool Connection pool is full, discarding connection: localhost. Connection pool size: 1 WARNING
+2022-11-25 16:13:30,576 werkzeug 127.0.0.1 - - [25/Nov/2022 16:13:30] "POST /details HTTP/1.1" 200 - INFO
+2022-11-25 16:13:30,896 werkzeug 127.0.0.1 - - [25/Nov/2022 16:13:30] "POST /details HTTP/1.1" 200 - INFO
+2022-11-25 16:13:31,283 werkzeug 127.0.0.1 - - [25/Nov/2022 16:13:31] "POST /details HTTP/1.1" 200 - INFO
