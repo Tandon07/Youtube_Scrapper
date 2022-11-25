@@ -483,3 +483,165 @@ IndexError: list index out of range
 2022-11-24 16:24:09,939 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "GET /download/2?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 - INFO
 2022-11-24 16:24:09,964 werkzeug 192.168.29.247 - - [24/Nov/2022 16:24:09] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 - INFO
 2022-11-24 16:25:18,163 werkzeug 192.168.29.247 - - [24/Nov/2022 16:25:18] "GET /details/VpkM6IiaJVU HTTP/1.1" 200 - INFO
+2022-11-25 10:54:49,356 werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) INFO
+2022-11-25 10:55:19,640 root Welcome to Youtube Scrapping INFO
+2022-11-25 10:55:19,653 werkzeug 127.0.0.1 - - [25/Nov/2022 10:55:19] "GET / HTTP/1.1" 200 - INFO
+2022-11-25 10:55:19,660 werkzeug 127.0.0.1 - - [25/Nov/2022 10:55:19] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
+2022-11-25 10:55:19,891 werkzeug 127.0.0.1 - - [25/Nov/2022 10:55:19] "GET /static/css/style.css HTTP/1.1" 200 - INFO
+2022-11-25 10:55:51,659 root 'src' ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 161, in index
+    imga.append(img[i]['src'])
+  File "C:\Users\tando\anaconda3\lib\site-packages\bs4\element.py", line 1519, in __getitem__
+    return self.attrs[key]
+KeyError: 'src'
+2022-11-25 10:55:51,716 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 180, in index
+    link.append("www.youtube.com" + all_videos[i])
+IndexError: list index out of range
+2022-11-25 10:55:52,479 root list index out of range ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 193, in index
+    dict={"S.No":i+1,"Title":title[i].text,"Thumbnail": imga[i],"Link":all_vids_new}
+IndexError: list index out of range
+2022-11-25 10:55:52,485 werkzeug 127.0.0.1 - - [25/Nov/2022 10:55:52] "POST /details HTTP/1.1" 200 - INFO
+2022-11-25 10:56:22,357 root Downloading... INFO
+2022-11-25 10:56:31,515 root Downloaded\U0001f60a\U0001f60a INFO
+2022-11-25 10:56:41,792 oauth2client.client Successfully retrieved access token INFO
+2022-11-25 10:56:41,807 googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0 INFO
+2022-11-25 10:56:52,132 root Uploaded INFO
+2022-11-25 10:56:54,716 root link shared INFO
+2022-11-25 10:56:54,723 werkzeug 127.0.0.1 - - [25/Nov/2022 10:56:54] "GET /download/1 HTTP/1.1" 200 - INFO
+2022-11-25 10:57:57,448 werkzeug 127.0.0.1 - - [25/Nov/2022 10:57:57] "GET /details/Pr_lgM4Yqb4 HTTP/1.1" 200 - INFO
+2022-11-25 10:58:27,813 app Exception on /details/VbaJ7eL9qFM [GET] ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 224, in moreinfo
+    mongoThumbnailF = mongoThumbnail.contents[0]['src']
+AttributeError: 'NoneType' object has no attribute 'contents'
+2022-11-25 10:58:27,817 werkzeug 127.0.0.1 - - [25/Nov/2022 10:58:27] "[35m[1mGET /details/VbaJ7eL9qFM HTTP/1.1[0m" 500 - INFO
+2022-11-25 10:58:53,046 app Exception on /details/VbaJ7eL9qFM [GET] ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 224, in moreinfo
+    mongoThumbnailF = mongoThumbnail.contents[0]['src']
+AttributeError: 'NoneType' object has no attribute 'contents'
+2022-11-25 10:58:53,047 werkzeug 127.0.0.1 - - [25/Nov/2022 10:58:53] "[35m[1mGET /details/VbaJ7eL9qFM HTTP/1.1[0m" 500 - INFO
+2022-11-25 10:59:04,760 urllib3.connectionpool Connection pool is full, discarding connection: localhost. Connection pool size: 1 WARNING
+2022-11-25 10:59:14,155 app Exception on /details/VbaJ7eL9qFM [GET] ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 224, in moreinfo
+    mongoThumbnailF = mongoThumbnail.contents[0]['src']
+AttributeError: 'NoneType' object has no attribute 'contents'
+2022-11-25 10:59:14,156 werkzeug 127.0.0.1 - - [25/Nov/2022 10:59:14] "[35m[1mGET /details/VbaJ7eL9qFM HTTP/1.1[0m" 500 - INFO
+2022-11-25 10:59:15,581 app Exception on /details/VbaJ7eL9qFM [GET] ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 224, in moreinfo
+    mongoThumbnailF = mongoThumbnail.contents[0]['src']
+AttributeError: 'NoneType' object has no attribute 'contents'
+2022-11-25 10:59:15,582 werkzeug 127.0.0.1 - - [25/Nov/2022 10:59:15] "[35m[1mGET /details/VbaJ7eL9qFM HTTP/1.1[0m" 500 - INFO
+2022-11-25 10:59:20,636 app Exception on /details [POST] ERROR
+Traceback (most recent call last):
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tando\anaconda3\lib\site-packages\flask_cors\decorator.py", line 128, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\tando\PycharmProjects\Youtube_Master\app.py", line 129, in index
+    driver.maximize_window()
+  File "C:\Users\tando\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 597, in maximize_window
+    self.execute(command, None)
+  File "C:\Users\tando\anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\tando\anaconda3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=107.0.5304.107)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x01068CE3+2067683]
+	Ordinal0 [0x00FFCBC1+1625025]
+	Ordinal0 [0x00EFB7CD+571341]
+	Ordinal0 [0x00EE6751+485201]
+	Ordinal0 [0x00EE5597+480663]
+	Ordinal0 [0x00EE4429+476201]
+	Ordinal0 [0x00F6BBEF+1031151]
+	Ordinal0 [0x00F4733C+881468]
+	Ordinal0 [0x00F5B576+963958]
+	Ordinal0 [0x00F47156+880982]
+	Ordinal0 [0x00F1FF1D+720669]
+	Ordinal0 [0x00F20F5F+724831]
+	GetHandleVerifier [0x0131F162+2771330]
+	GetHandleVerifier [0x01311145+2713957]
+	GetHandleVerifier [0x010FCC0A+533546]
+	GetHandleVerifier [0x010FB970+528784]
+	Ordinal0 [0x01004F4C+1658700]
+	Ordinal0 [0x010098B8+1677496]
+	Ordinal0 [0x010099A5+1677733]
+	Ordinal0 [0x01014CC4+1723588]
+	BaseThreadInitThunk [0x76907BA9+25]
+	RtlInitializeExceptionChain [0x777EBB9B+107]
+	RtlClearBits [0x777EBB1F+191]
+
+2022-11-25 10:59:20,641 werkzeug 127.0.0.1 - - [25/Nov/2022 10:59:20] "[35m[1mPOST /details HTTP/1.1[0m" 500 - INFO
+2022-11-25 10:59:36,456 root Welcome to Youtube Scrapping INFO
+2022-11-25 10:59:36,457 werkzeug 127.0.0.1 - - [25/Nov/2022 10:59:36] "GET / HTTP/1.1" 200 - INFO
+2022-11-25 10:59:36,467 werkzeug 127.0.0.1 - - [25/Nov/2022 10:59:36] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 - INFO
+2022-11-25 11:00:14,924 werkzeug 127.0.0.1 - - [25/Nov/2022 11:00:14] "POST /details HTTP/1.1" 200 - INFO
+2022-11-25 11:01:36,323 werkzeug 127.0.0.1 - - [25/Nov/2022 11:01:36] "GET /details/tiolFUyXIEo HTTP/1.1" 200 - INFO

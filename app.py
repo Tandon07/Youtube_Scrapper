@@ -20,7 +20,31 @@ from selenium.webdriver.firefox.options import Options
 import mysql.connector as conn
 from mysql.connector import cursor
 from pytube import YouTube
-driver = webdriver.Chrome(ChromeDriverManager().install())
+# driver = webdriver.Chrome(ChromeDriverManager().install())
+import config
+import pandas as pd
+from flask import Flask, render_template, request, jsonify, url_for
+from flask_cors import CORS, cross_origin
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+import os
+from urllib.parse import urlparse
+import config
+
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+ser = Service("chromedriver.exe")
+op = webdriver.ChromeOptions()
+driver = webdriver.Chrome(service=ser, options=op)
 # driver = webdriver.Firefox(firefox_options=options)
 # from selenium import webdriver
 # from webdriver_manager.firefox import GeckoDriverManager # Code 2
@@ -225,6 +249,7 @@ class Youtube:
                 c = (str(comment[j].text))
                 commentsNew.append({"Name": cn,
                              "Comment": c})
+                print(commentsNew)
         except Exception as e:
             logging.exception(e)
 
@@ -328,6 +353,8 @@ class Youtube:
 
     if __name__ == "__main__":
         #app.run(host='127.0.0.1', port=8002, debug=True)
-        app.run(host="0.0.0.0",debug=True,port=os.environ['PORT'])
+        # app.run(host="0.0.0.0",debug=True,port=os.environ['PORT'])
+        app.run()
+
 
 
